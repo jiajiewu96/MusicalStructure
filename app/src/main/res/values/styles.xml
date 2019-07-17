@@ -8,4 +8,26 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="SelectorStyle">
+        <item name="android:layout_height">24dp</item>
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingBottom">24dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textColor">@color/selectorTextColor</item>
+    </style>
+
+    <style name="SelectorStyle.AlbumSelector">
+        <item name="android:background">@color/albumSelectorBackground</item>
+    </style>
+    <style name="SelectorStyle.ArtistSelector">
+        <item name="android:background">@color/artistSelectorBackground</item>
+    </style>
+    <style name="SelectorStyle.SongSelector">
+        <item name="android:background">@color/songSelectorBackground</item>
+    </style>
+
 </resources>

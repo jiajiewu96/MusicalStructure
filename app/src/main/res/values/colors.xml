@@ -3,4 +3,9 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+
+    <color name="albumSelectorBackground">#303F9f</color>
+    <color name="artistSelectorBackground">#F57C00</color>
+    <color name="songSelectorBackground">#513DA8</color>
+    <color name="selectorTextColor">#E0E0E0</color>
 </resources>
