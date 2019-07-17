@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         SongDataManager sdm = SongDataManager.getInstance();
 
         TextView albumSelectorTextView = (TextView) findViewById(R.id.album_selector_text_view);
