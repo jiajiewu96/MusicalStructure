@@ -2,4 +2,7 @@
     <string name="app_name">Musical Structure</string>
     <string name="albums_activity_name">Albums</string>
     <string name="main_activity_name">Your Music</string>
+    <string name="album_tools_text">Album</string>
+    <string name="artist_tools_text">Artist</string>
+    <string name="song_tools_text">Song</string>
 </resources>
