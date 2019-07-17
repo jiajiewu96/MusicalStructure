@@ -17,10 +17,4 @@
         android:layout_height="wrap_content"
         style="@style/ListItemStyle.SecondaryInfo"
         tools:text="@string/artist_tools_text"/>
-    <TextView
-        android:id="@+id/album_list_song_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        style="@style/ListItemStyle.SecondaryInfo"
-        tools:text="@string/song_tools_text"/>
 </LinearLayout>
