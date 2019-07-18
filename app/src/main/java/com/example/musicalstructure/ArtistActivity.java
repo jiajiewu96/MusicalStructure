@@ -3,6 +3,7 @@ package com.example.musicalstructure;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -14,26 +15,23 @@ public class ArtistActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_artist);
         ArrayList<Song> songs = songDataManager.getSongs();
-        ArrayList<String> albumNames = new ArrayList<>();
         ArrayList<String> artistNames = new ArrayList<>();
 
-        //add initial albums
-        albumNames.add(songs.get(0).getAlbumName());
+        //add initial artist name
         artistNames.add(songs.get(0).getArtistName());
 
-        String previousAlbumName = songs.get(0).getAlbumName();
+        String previousArtistName = songs.get(0).getArtistName();
         //Checks through song arraylist if the album is
         for(Song song: songs){
-            if(!previousAlbumName.equals(song.getAlbumName())){
-                albumNames.add(song.getAlbumName());
+            if(!previousArtistName.equals(song.getArtistName())){
                 artistNames.add(song.getArtistName());
-                previousAlbumName = song.getAlbumName();
+                previousArtistName = song.getArtistName();
             }
         }
 
-        AlbumAdapter albumAdapter = new AlbumAdapter(this, albumNames, artistNames);
+        ArrayAdapter artistAdapter = new ArrayAdapter<String>(this, R.layout.artist_list_item,artistNames);
 
         ListView listView = findViewById(R.id.album_list);
-        listView.setAdapter(albumAdapter);
+        listView.setAdapter(artistAdapter);
     }
 }
