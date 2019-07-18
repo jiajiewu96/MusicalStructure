@@ -1,6 +1,7 @@
 package com.example.musicalstructure;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,15 +31,7 @@ public class AlbumAdapter extends ArrayAdapter<String> {
         String albumName = albumNames.get(position);
         String artistName = artistNames.get(position);
 
-        final String toastMessage = albumName;
-
-        listItemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
-
+        listItemView.setOnClickListener(new SongParameterClickListener(albumName,getContext()));
 
         TextView albumTextView = (TextView) listItemView.findViewById(R.id.album_list_album_name);
         TextView artistTextView = (TextView) listItemView.findViewById(R.id.album_list_artist_name);

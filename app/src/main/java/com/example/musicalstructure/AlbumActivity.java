@@ -22,7 +22,7 @@ public class AlbumActivity extends AppCompatActivity {
 
         //add initial albums
         albumNames.add(songs.get(0).getAlbumName());
-        albumNames.add(songs.get(0).getArtistName());
+        artistNames.add(songs.get(0).getArtistName());
 
         String previousAlbumName = songs.get(0).getAlbumName();
         //Checks through song arraylist if the album is
