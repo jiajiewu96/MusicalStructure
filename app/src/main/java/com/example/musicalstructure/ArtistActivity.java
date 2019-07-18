@@ -29,7 +29,7 @@ public class ArtistActivity extends AppCompatActivity {
             }
         }
 
-        ArrayAdapter artistAdapter = new ArrayAdapter<String>(this, R.layout.artist_list_item,artistNames);
+        ArtistAdapter artistAdapter = new ArtistAdapter(this, artistNames);
 
         ListView listView = findViewById(R.id.album_list);
         listView.setAdapter(artistAdapter);

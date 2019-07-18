@@ -19,10 +19,12 @@ public class SongListActivity extends AppCompatActivity {
         ArrayList<Song> songs;
         String songSelector = "";
         int selectionMethod = 0;
+        //If the extras are not null, set some selection criteria
         if(extras != null){
             songSelector = extras.getString("sort_string");
             selectionMethod = extras.getInt("selection_method");
         }
+        //if there is a selection method, and the songSelector is not "", then get songs for the selected song
         if(selectionMethod > 0 && !songSelector.equals("")){
             songs = songDataManager.getSongsFor(songSelector, selectionMethod);
         }else{
