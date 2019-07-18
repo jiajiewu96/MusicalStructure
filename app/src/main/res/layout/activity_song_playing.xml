@@ -25,6 +25,9 @@
         style="@style/ListItemStyle.PrimaryInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/now_playing_text_view"
         app:layout_constraintStart_toStartOf="@+id/now_playing_text_view"
         app:layout_constraintTop_toBottomOf="@id/now_playing_text_view"
         tools:text="Song Name" />
@@ -34,8 +37,7 @@
         style="@style/ListItemStyle.SecondaryInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/song_playing_song_name"
         app:layout_constraintStart_toStartOf="@+id/song_playing_song_name"
         app:layout_constraintTop_toBottomOf="@id/song_playing_song_name"
         tools:text="Artist Name" />
@@ -46,8 +48,7 @@
         style="@style/ListItemStyle.SecondaryInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/song_playing_song_name"
         app:layout_constraintStart_toStartOf="@+id/song_playing_song_name"
         app:layout_constraintTop_toBottomOf="@id/song_playing_artist_name"
         tools:text="Album Name" />
