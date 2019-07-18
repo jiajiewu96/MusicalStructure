@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.ListView;
 
 import java.util.ArrayList;
 
@@ -24,8 +25,12 @@ public class SongListActivity extends AppCompatActivity {
         }
         if(selectionMethod > 0 && !songSelector.equals("")){
             songs = songDataManager.getSongsFor(songSelector, selectionMethod);
+        }else{
+            songs = songDataManager.getSongs();
         }
 
-
+        SongListAdapter songListAdapter = new SongListAdapter(this, songs);
+        ListView listView = findViewById(R.id.song_list);
+        listView.setAdapter(songListAdapter);
     }
 }
