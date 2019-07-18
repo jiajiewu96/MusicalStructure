@@ -19,7 +19,7 @@ public class ArtistAdapter extends ArrayAdapter<String> {
     public View getView(int position, View convertView, ViewGroup parent) {
         View listItemView = convertView;
         if(listItemView == null){
-            listItemView = LayoutInflater.from(getContext()).inflate(R.layout.album_list_item, parent, false);
+            listItemView = LayoutInflater.from(getContext()).inflate(R.layout.artist_list_item, parent, false);
         }
 
         String artistName = getItem(position);

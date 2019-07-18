@@ -31,7 +31,7 @@ public class ArtistActivity extends AppCompatActivity {
 
         ArtistAdapter artistAdapter = new ArtistAdapter(this, artistNames);
 
-        ListView listView = findViewById(R.id.album_list);
+        ListView listView = findViewById(R.id.artist_list_view);
         listView.setAdapter(artistAdapter);
     }
 }

@@ -31,12 +31,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //Startup artist activity
+                Intent intent = new Intent(MainActivity.this, ArtistActivity.class);
+                startActivity(intent);
+
             }
         });
         songSelectorTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //Startup song activity
+                Intent intent = new Intent(MainActivity.this, SongListActivity.class);
+                startActivity(intent);
             }
         });
 
