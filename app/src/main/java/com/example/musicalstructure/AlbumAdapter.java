@@ -35,7 +35,7 @@ public class AlbumAdapter extends ArrayAdapter<String> {
         listItemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getContext(), toastMessage, Toast.LENGTH_SHORT).show();
+
             }
         });
 

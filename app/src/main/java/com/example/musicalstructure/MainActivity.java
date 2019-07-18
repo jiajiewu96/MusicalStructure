@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
         SongDataManager sdm = SongDataManager.getInstance();
 
-        TextView albumSelectorTextView = (TextView) findViewById(R.id.album_selector_text_view);
+        final TextView albumSelectorTextView = (TextView) findViewById(R.id.album_selector_text_view);
         TextView artistSelectorTextView = (TextView) findViewById(R.id.artitst_selector_text_view);
         TextView songSelectorTextView = (TextView) findViewById(R.id.song_selector_text_view);
 
