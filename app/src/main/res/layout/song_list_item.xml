@@ -1,27 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/song_list_song_text_view"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/ListItemStyle.PrimaryInfo"
-        tools:text="@string/song_tools_text" />
+        android:orientation="vertical"
+        android:layout_weight="2">
 
-    <TextView
-        android:id="@+id/song_list_album_text_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        style="@style/ListItemStyle.SecondaryInfo"
-        tools:text="@string/album_tools_text" />
+        <TextView
+            android:id="@+id/song_list_song_text_view"
+            style="@style/ListItemStyle.PrimaryInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="@string/song_tools_text" />
 
-    <TextView
-        android:id="@+id/song_list_artist_text_view"
-        android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/song_list_album_text_view"
+            style="@style/ListItemStyle.SecondaryInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="@string/album_tools_text" />
+
+        <TextView
+            android:id="@+id/song_list_artist_text_view"
+            style="@style/ListItemStyle.SecondaryInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="@string/artist_tools_text" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/play_button_image"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="@style/ListItemStyle.SecondaryInfo"
-        tools:text="@string/artist_tools_text" />
+        android:layout_gravity="center"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:src="@drawable/ic_play_48dp"
+        app:srcCompat="@drawable/ic_play_48dp" />
+
 </LinearLayout>

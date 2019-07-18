@@ -52,4 +52,26 @@
         app:layout_constraintStart_toStartOf="@+id/song_playing_song_name"
         app:layout_constraintTop_toBottomOf="@id/song_playing_artist_name"
         tools:text="Album Name" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/song_playing_album_name"
+        app:layout_constraintTop_toBottomOf="@+id/song_playing_album_name"
+        app:srcCompat="@drawable/ic_play_48dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/song_playing_album_name"
+        app:layout_constraintTop_toBottomOf="@+id/song_playing_album_name"
+        app:srcCompat="@drawable/ic_pause_48dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
