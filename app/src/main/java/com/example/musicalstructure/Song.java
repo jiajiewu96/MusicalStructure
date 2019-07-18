@@ -14,7 +14,7 @@ public class Song {
     public String getSongName() {
         return mSongName;
     }
-    public String getmAlbumName() {
+    public String getAlbumName() {
         return mAlbumName;
     }
     public String getArtistName(){

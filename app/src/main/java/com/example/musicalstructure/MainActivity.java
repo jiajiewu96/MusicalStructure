@@ -2,6 +2,7 @@ package com.example.musicalstructure;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -23,6 +24,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //Startup album activity
+                Intent intent = new Intent(MainActivity.this, AlbumActivity.class);
+                startActivity(intent);
+
             }
         });
         artistSelectorTextView.setOnClickListener(new View.OnClickListener() {
