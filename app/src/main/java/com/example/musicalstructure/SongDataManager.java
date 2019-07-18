@@ -6,6 +6,8 @@ public class SongDataManager {
 
     private static ArrayList<Song> songs = new ArrayList<>();
     private static final SongDataManager ourInstance = new SongDataManager();
+    private final int SELECTION_ALBUMS = 100;
+    private final int SELECTION_ARTISTS = 200;
 
     public static SongDataManager getInstance() {
         return ourInstance;
@@ -33,5 +35,37 @@ public class SongDataManager {
 
     public ArrayList<Song> getSongs() {
         return songs;
+    }
+
+    public ArrayList<Song> getSongsFor(String songSelector, int selectionMethod){
+        ArrayList<Song> songsMatching = new ArrayList<>();
+        switch (selectionMethod){
+            case SELECTION_ALBUMS:
+                songsMatching = getSongsForAlbum(songSelector);
+                break;
+            case SELECTION_ARTISTS:
+                songsMatching = getSongsForArtist(songSelector);
+        }
+        return songsMatching;
+    }
+
+    private ArrayList<Song> getSongsForArtist(String songSelector) {
+        ArrayList<Song> songsForArtist = new ArrayList<>();
+        for(Song song:songs){
+            if(song.getArtistName().equals(songSelector)){
+                songsForArtist.add(song);
+            }
+        }
+        return songsForArtist;
+    }
+
+    private ArrayList<Song> getSongsForAlbum(String songSelector) {
+        ArrayList<Song> songsInAlbum = new ArrayList<>();
+        for(Song song:songs){
+            if(song.getAlbumName().equals(songSelector)){
+                songsInAlbum.add(song);
+            }
+        }
+        return songsInAlbum;
     }
 }
