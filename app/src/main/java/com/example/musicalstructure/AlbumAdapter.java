@@ -29,7 +29,7 @@ public class AlbumAdapter extends ArrayAdapter<String> {
         String albumName = albumNames.get(position);
         String artistName = artistNames.get(position);
 
-        listItemView.setOnClickListener(new SongParameterClickListener(albumName,getContext()));
+        listItemView.setOnClickListener(new SongParameterClickListener(albumName,getContext(),100));
 
         TextView albumTextView = (TextView) listItemView.findViewById(R.id.album_list_album_name);
         TextView artistTextView = (TextView) listItemView.findViewById(R.id.album_list_artist_name);

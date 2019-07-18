@@ -7,15 +7,18 @@ import android.view.View;
 public class SongParameterClickListener implements View.OnClickListener {
     private final String songSort;
     private final Context context;
-    public SongParameterClickListener(String songSort, Context context){
+    private final int selectionMethod;
+    public SongParameterClickListener(String songSort, Context context, int selectionMethod){
         this.songSort = songSort;
         this.context = context;
+        this.selectionMethod = selectionMethod;
     }
 
     @Override
     public void onClick(View view) {
         Intent intent = new Intent(context, SongListActivity.class);
         intent.putExtra("sort_string", songSort);
+        intent.putExtra("selection_method", selectionMethod);
         context.startActivity(intent);
     }
 }
