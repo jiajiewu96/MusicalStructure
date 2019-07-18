@@ -16,7 +16,7 @@ public class SongListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_song_list);
 
         Bundle extras = getIntent().getExtras();
-        ArrayList<Song> songs = new ArrayList<>();
+        ArrayList<Song> songs;
         String songSelector = "";
         int selectionMethod = 0;
         if(extras != null){
