@@ -14,8 +14,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        SongDataManager sdm = SongDataManager.getInstance();
-
         final TextView albumSelectorTextView = (TextView) findViewById(R.id.album_selector_text_view);
         TextView artistSelectorTextView = (TextView) findViewById(R.id.artitst_selector_text_view);
         TextView songSelectorTextView = (TextView) findViewById(R.id.song_selector_text_view);
