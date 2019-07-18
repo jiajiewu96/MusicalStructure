@@ -7,4 +7,5 @@
     <string name="song_tools_text">Song</string>
     <string name="song_playing_activity_name">Now Playing</string>
     <string name="song_list_activity_name">Songs</string>
+    <string name="artist_activity_name">Artist</string>
 </resources>
