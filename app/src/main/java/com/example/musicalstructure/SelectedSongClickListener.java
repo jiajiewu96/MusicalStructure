@@ -15,6 +15,9 @@ public class SelectedSongClickListener implements View.OnClickListener{
     @Override
     public void onClick(View view) {
         Intent intent = new Intent(context, SongPlayingActivity.class);
+        intent.putExtra("song_name", selectedSong.getSongName());
+        intent.putExtra("song_artist", selectedSong.getArtistName());
+        intent.putExtra("song_album", selectedSong.getAlbumName());
         context.startActivity(intent);
     }
 }
