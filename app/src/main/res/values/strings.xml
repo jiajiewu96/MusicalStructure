@@ -5,4 +5,6 @@
     <string name="album_tools_text">Album</string>
     <string name="artist_tools_text">Artist</string>
     <string name="song_tools_text">Song</string>
+    <string name="song_playing_activity_name">Now Playing</string>
+    <string name="song_list_activity_name">Songs</string>
 </resources>
