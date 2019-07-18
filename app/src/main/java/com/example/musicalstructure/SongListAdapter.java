@@ -25,6 +25,8 @@ public class SongListAdapter extends ArrayAdapter<Song> {
 
         Song song = getItem(position);
 
+        listItemView.setOnClickListener(new SelectedSongClickListener(getContext(),song));
+
         TextView songNameTextView = (TextView) listItemView.findViewById(R.id.song_list_song_text_view);
         TextView songAlbumTextView = (TextView) listItemView.findViewById(R.id.song_list_album_text_view);
         TextView songArtistTextView = (TextView) listItemView.findViewById(R.id.song_list_artist_text_view);
